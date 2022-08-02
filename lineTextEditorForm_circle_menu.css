@@ -1,0 +1,207 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle, rgba(174, 238, 180, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    /*background: radial-gradient(circle, rgba(252, 176, 69, 1) 3%, rgba(253, 84, 29, 1) 100%);*/
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: 'Courier New', monospace;
+    font-size: 50px;
+}
+
+h4 {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Courier New', monospace;
+    font-size: 40px;
+}
+
+input {
+    width: 500px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#eredmenyMegjelenito {
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+#foSzoveg {
+    width: 595px;
+    margin: 3px;
+}
+
+
+
+
+
+/**/
+.circle-menu li {
+    list-style: none;
+    display: inline;
+
+}
+
+.circle-menu {
+    position: relative;
+    width: 24em;
+    height: 24em;
+    border: inset 50px #cccc;
+    box-shadow: 3px 3px 3px;
+    border-radius: 50%;
+    margin: 2em;
+}
+
+
+
+.circle-menu button {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8em;
+    height: 8em;
+    line-height: 8em;
+    margin: -3.5em;
+    -moz-border-radius: 4em;
+    -webkit-border-radius: 4em;
+    border-radius: 4em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+
+}
+
+.circle-menu button.camel {
+    background: radial-gradient(circle, rgba(2, 0, 36, 0.6) 0%, rgba(9, 9, 121, 0.6) 35%, rgba(0, 212, 255, 0.6) 100%);
+
+}
+
+.circle-menu button.kari {
+    background: radial-gradient(circle, rgba(2, 0, 36, 0.6) 0%, rgba(9, 9, 121, 0.6) 36%, rgba(9, 15, 125, 0.6) 37%, rgba(0, 212, 255, 0.6) 96%);
+
+}
+
+.circle-menu button.fuz {
+    background: radial-gradient(circle, rgba(2, 0, 36, 0.6) 12%, rgba(9, 9, 121, 0.6) 40%, rgba(9, 15, 125, 0.6) 42%, rgba(0, 212, 255, 0.6) 87%);
+
+}
+
+.circle-menu button.ismet {
+    background: radial-gradient(circle, rgba(2, 0, 36, 0.6) 0%, rgba(9, 9, 121, 0.6) 35%, rgba(0, 212, 255, 0.6) 100%);
+
+}
+
+.circle-menu button.csere {
+    background: radial-gradient(circle, rgba(2, 0, 36, 0.6) 0%, rgba(9, 9, 121, 0.6) 35%, rgba(0, 212, 255, 0.6) 100%);
+
+}
+
+
+.circle-menu button.vago {
+    background: radial-gradient(circle, rgba(2, 0, 36, 0.6) 0%, rgba(9, 9, 121, 0.6) 35%, rgba(0, 212, 255, 0.6) 100%);
+
+}
+
+.circle-menu button.kereso {
+    background: radial-gradient(circle, rgba(2, 0, 36, 0.6) 0%, rgba(9, 9, 121, 0.6) 35%, rgba(0, 212, 255, 0.6) 100%);
+
+}
+
+.circle-menu button.camel:hover {
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+}
+
+.circle-menu button.kari:hover {
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 36%, rgba(9, 15, 125, 1) 37%, rgba(0, 212, 255, 1) 96%);
+
+}
+
+.circle-menu button.fuz:hover {
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 12%, rgba(9, 9, 121, 1) 40%, rgba(9, 15, 125, 1) 42%, rgba(0, 212, 255, 1) 87%);
+
+}
+
+.circle-menu button.ismet:hover {
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+}
+
+.circle-menu button.csere:hover {
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+}
+
+
+.circle-menu button.vago:hover {
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+}
+
+.circle-menu button.kereso:hover {
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+}
+
+
+
+.circle-menu .camel {
+    transform: rotate(51deg) translate(12em) rotate(-51deg);
+    -webkit-transform: rotate(51deg) translate(12em) rotate(-51deg);
+    -ms-transform: rotate(51deg) translate(12em) rotate(-51deg);
+}
+
+.circle-menu .kari {
+    transform: rotate(102deg) translate(12em) rotate(-102deg);
+    -webkit-transform: rotate(102deg) translate(12em) rotate(-102deg);
+    -ms-transform: rotate(102deg) translate(12em) rotate(-102deg);
+}
+
+.circle-menu .fuz {
+    transform: rotate(153deg) translate(12em) rotate(-153deg);
+    -webkit-transform: rotate(153deg) translate(12em) rotate(-153deg);
+    -ms-transform: rotate(153deg) translate(12em) rotate(-153deg);
+}
+
+.circle-menu .ismet {
+    transform: rotate(204deg) translate(12em) rotate(-204deg);
+    -webkit-transform: rotate(204deg) translate(12em) rotate(-204deg);
+    -ms-transform: rotate(204deg) translate(12em) rotate(-204deg);
+}
+
+.circle-menu .csere {
+    transform: rotate(255deg) translate(12em) rotate(-255deg);
+    -webkit-transform: rotate(255deg) translate(12em) rotate(-255deg);
+    -ms-transform: rotate(255deg) translate(12em) rotate(-255eg);
+}
+
+
+.circle-menu .vago {
+    transform: rotate(306deg) translate(12em) rotate(-306deg);
+    -webkit-transform: rotate(306deg) translate(12em) rotate(-306deg);
+    -ms-transform: rotate(306deg) translate(12em) rotate(-306deg);
+}
+
+.circle-menu .kereso {
+    transform: rotate(357deg) translate(12em) rotate(-357deg);
+    -webkit-transform: rotate(357deg) translate(12em) rotate(-357deg);
+    -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);
+}

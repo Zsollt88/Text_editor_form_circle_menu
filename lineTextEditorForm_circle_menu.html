@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nagy Zsolt">
+    <title>Szövegszerkesztő form</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="lineTextEditorForm_circle_menu.css">
+
+</head>
+
+<body>
+
+    <h1>Szövegszerkesztési lehetőségek</h1>
+
+    <div id="content">
+        <div class="row">
+            <div class="col-sm-12 col-lg-8">
+                <form action="" style="width:600px; height:500px;">
+                    <div class="form-floating">
+                        <input type="text" name="kezdoSzoveg" id="foSzoveg" class="form-control">
+                        <label for="kezdoSzoveg">Gépelj be egy tetszőleges szöveget!</label>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="number" name="egyBetu" id="charAtParametere" class="form-control" value="0"
+                                    min="0">
+                                <label for="egyBetu">A charAt függvény a szöveg egy karakterével tér vissza.</label>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="tobbSzoveg" id="hozzaFuz" class="form-control">
+                                <label for="tobbSzoveg">Gépelj be egy tetszőleges szöveget, amit hozzáadsz a fenti
+                                    szöveghez!</label>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="number" name="visszhang" id="repeatParametere" class="form-control"
+                                    value="0" min="1">
+                                <label for="visszhang">Hányszor ismételje meg a szöveget?</label>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="kicserel1" id="csereBere1" class="form-control">
+                                <label for="kicserel1">Válaszd ki, hogy mit szeretnél lecserélni a szövegből</label>
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="kicserel2" id="csereBere2" class="form-control">
+                                <label for="kicserel2">Mire szeretnéd cserélni?</label>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="number" name="kivag1" id="kivago1" class="form-control" value="0" min="0">
+                                <label for="kivag1">Honnan kezdődjön a kivágás?</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="number" name="kivag2" id="kivago2" class="form-control" value="0" min="0">
+                                <label for="kivag2">Hány karaktert szeretnél kivágni?</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h4>Egy kis extra</h4>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" name="kitalalo" id="jatek" class="form-control" placeholder="">
+                                <label for="kitalalo">Fejezd be: "Tedd vagy ne tedd de ne .... </label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div id="eredmenyMegjelenito"><u><i>Szövegszerkesztés eredménye</i></u></div>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-4">
+                <div class="circle-menu">
+                    <ul>
+                        <li><button type="button" class="btn btn-primary camel"
+                                onclick="camelCaseGenerator()">camelCase</button></li>
+                        <li><button type="button" class="btn btn-primary kari" onclick="egyKarakter()">charAt</button>
+                        </li>
+                        <li><button type="button" class="btn btn-primary fuz" onclick="hozzafuz()">concat</button>
+                        </li>
+                        <li><button type="button" class="btn btn-primary ismet" onclick="ismetlo()">repeat</button>
+                        </li>
+                        <li><button type="button" class="btn btn-primary csere" onclick="cserelo()">replace</button>
+                        </li>
+                        <li><button type="button" class="btn btn-primary vago" onclick="vagas()">substr</button>
+                        </li>
+                        <li><button type="button" class="btn btn-danger kereso" onclick="kereso()">Extra</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="lineTextGenerator.js"></script>
+    </div>
+</body>
+
+</html>
